@@ -1,9 +1,10 @@
 <template>
-<div>
+  <div>
+<div class=" alert alert-primary" role="alert">
+  hekkkkekfdf
 
 </div>
-
-
+  </div>
 
   <router-view></router-view>
 </template>
