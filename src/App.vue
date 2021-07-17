@@ -1,18 +1,19 @@
 <template>
   <div>
-<div class=" alert alert-primary" role="alert">
-  hekkkkekfdf
+    <Header />
 
-</div>
   </div>
 
   <router-view></router-view>
 </template>
 
 <script>
-
+import Header from './components/Header.vue'
 export default {
   name: 'App',
+  components:{
+    Header
+  }
 
 }
 </script>
