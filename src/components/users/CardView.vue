@@ -1,6 +1,4 @@
 <template>
-  <div class="container mt-5">
-      <div class="row">
           <div class="card" style="width: 18rem;">
               <div class="card-header">
                 Featured
@@ -11,13 +9,13 @@
                 <li class="list-group-item">A third item</li>
               </ul>
             </div>
-      </div>
-  </div>
-
 </template>
 
 <script>
 export default {
+  props:{
+    user:Object
+  }
 
 }
 </script>
