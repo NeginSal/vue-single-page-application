@@ -1,7 +1,7 @@
 <template>
     <div class="container mt-5">
-      <div class="row">
-          <div class="col-md-4" v-for="user in users" :key="user.id">
+      <div class="row " >
+          <div class="col-md-4 my-2" v-for="user in users" :key="user.id">
               <UserCardView :user="user"/>
           </div>
       </div>
@@ -31,7 +31,7 @@ export default {
             });
         }
         getUsers()
-        return users;
+        return {users};
     },
 
 }
