@@ -5,11 +5,11 @@ import IndexUser from './pages/users/Index.vue'
 import ShowUser from './pages/users/Show.vue'
 
 const routes = [
-    {path:'/', name:Home, component:Home},
-    {path:'/users', name:"users", component:TemplateUser , children:[
-        {path:'', name:"users", component:IndexUser },
-        {path: ':id', name: 'userId', component: ShowUser}
-    ]},
+    { path: '/', name: 'home', component: Home },
+    { path: '/users', name: 'userTemplate', component: TemplateUser , children:[
+        {path: '', name: 'users', component: IndexUser},
+        { path: ':id', name: 'userId', component: ShowUser }
+    ] }
 ];
 
 const router = createRouter({
