@@ -1,11 +1,8 @@
 <template>
-    <div class="container mt-5">
-      <div class="row " >
           <div class="col-md-4 my-2">
               <UserCardView :user="user"/>
           </div>
-      </div>
-  </div>
+
 </template>
 
 <script>

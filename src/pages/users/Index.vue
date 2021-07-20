@@ -1,12 +1,9 @@
 <template>
-    <div  v-if="route.params.id == undefined " class="container mt-5">
-      <div class="row " >
+
           <div class="col-md-4 my-2" v-for="user in users" :key="user.id">
               <UserCardView :user="user"/>
           </div>
-      </div>
-  </div>
-   <router-view v-else/>
+
 </template>
 
 <script>
