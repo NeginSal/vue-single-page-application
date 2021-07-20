@@ -1,17 +1,19 @@
 <template>
-    <div class="container mt-5">
+    <div  v-if="route.params.id == undefined " class="container mt-5">
       <div class="row " >
           <div class="col-md-4 my-2" v-for="user in users" :key="user.id">
               <UserCardView :user="user"/>
           </div>
       </div>
   </div>
+   <router-view v-else/>
 </template>
 
 <script>
 import axios from 'axios'
 import { ref } from '@vue/reactivity';
 import UserCardView from '@/components/users/CardView'
+import { useRoute } from 'vue-router';
 
 export default {
     components:{
@@ -19,6 +21,7 @@ export default {
     },
     setup(){
         const users = ref([]);
+        const route = useRoute()
 
         function getUsers(){
             axios
@@ -31,7 +34,7 @@ export default {
             });
         }
         getUsers()
-        return {users};
+        return {users, route};
     },
 
 }
