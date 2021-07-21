@@ -12,6 +12,7 @@
                   Nescio brains an Undead zombies. Sicut malus putrid voodoo horror. Nigh tofth eliv ingdead.
               </p>
               <router-link class="btn btn-primary" :to="{name:'users'}">Users</router-link>
+              <router-link class="btn btn-success ml-5" :to="{name:'posts'}">Posts</router-link>
 
           </div>
       </div>

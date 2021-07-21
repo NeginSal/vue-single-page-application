@@ -9,7 +9,7 @@ import TemplatePost from './pages/posts/Template.vue'
 import IndexPost from './pages/posts/Index.vue'
 
 const routes = [
-    { path: '/', name: 'home', component: Home },
+    {   path: '/', name: 'home', component: Home },
     {
         path: '/users', name: 'userTemplate', component: TemplateUser , children:[
             { path: '', name: 'users', component: IndexUser},
