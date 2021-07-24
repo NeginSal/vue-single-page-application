@@ -8,7 +8,10 @@
               <ul class="list-group list-group-flush">
                 <li class="list-group-item">Body: {{ post.body }}</li>
               </ul>
-
+              <div class="card-footer">
+                <button class="btn btn-sm btn-success  ">Edit</button>
+                <button class="btn btn-sm btn-danger ml-3">Delete</button>
+              </div>
             </div>
           </div>
 
