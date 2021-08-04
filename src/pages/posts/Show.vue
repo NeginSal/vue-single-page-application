@@ -9,7 +9,7 @@
                 <li class="list-group-item">Body: {{ post.body }}</li>
               </ul>
               <div class="card-footer">
-                <button class="btn btn-sm btn-success  ">Edit</button>
+                <router-link class="btn btn-sm btn-success" :to="{name:'editPost' , params:{id:post.id}}">Edit</router-link>
                 <button class="btn btn-sm btn-danger ml-3">Delete</button>
               </div>
             </div>
